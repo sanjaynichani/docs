@@ -1,6 +1,6 @@
 ---
 title: "Task 1: Building a CS System (0 to 1)"
-description: "A strategic framework for standing up Enterprise Customer Success at Mintlify — metrics, expansion levers, churn prevention, and navigating engineering constraints."
+description: "A strategic framework for standing up Enterprise Customer Success at Mintlify: metrics, expansion levers, churn prevention, and navigating engineering constraints."
 ---
 
 Building an Enterprise Customer Success function at an engineering-led, product-focused organization like Mintlify requires a deliberate blend of quantitative product analytics and qualitative Developer Experience (DX) sentiment. As we scale upmarket, our CS infrastructure must protect core engineering focus while maximizing expansion levers across our enterprise accounts.
@@ -12,49 +12,46 @@ Building an Enterprise Customer Success function at an engineering-led, product-
 To effectively operationalize an upmarket customer success engine, we track health and performance indicators across three core vectors: functional success, product health, and engineering roadmap alignment.
 
 ### A. Signaling CS Function Success
-
 These lagging financial and operational indicators prove that the Customer Success team is delivering tangible business value and securing predictable revenue.
 
-<CardGroup cols={3}>
-  <Card title="Net Revenue Retention (NRR)" icon="trending-up">
+<CardGroup cols="{3}">
+  <Card icon="trending-up" title="Net Revenue Retention (NRR)">
     The ultimate enterprise growth metric. Validates that accounts are scaling through seat expansion and metered AI consumption faster than any underlying downgrades.
-
+    
     **Target: >120% for enterprise segments**
   </Card>
-  <Card title="Gross Revenue Retention (GRR)" icon="shield-check">
+  <Card icon="shield-check" title="Gross Revenue Retention (GRR)">
     Measures the foundational stability of our ARR book before accounting for expansion. Isolates underlying product or onboarding friction.
-
+    
     **Target: >95%**
   </Card>
-  <Card title="Time-to-Value (TTV)" icon="timer">
+  <Card icon="timer" title="Time-to-Value (TTV)">
     Duration from contract execution to First Production Deployment — the customer's branded docs site live on a custom domain with functional search and analytics.
-
+    
     **Target: <14 days**
   </Card>
 </CardGroup>
 
 ### B. Determining Product Health (The Mintlify Health Score)
-
 A healthy Mintlify customer deeply embeds the platform into their daily engineering workflows. We measure product adoption using an automated, multi-variable health score:
 
 <AccordionGroup>
-  <Accordion title="Pipeline Sync & Build Frequency" icon="git-branch">
+  <Accordion icon="git-branch" title="Pipeline Sync & Build Frequency">
     The number of automated documentation builds triggered via GitHub Actions or GitLab CI per week. Documentation that hasn't synced in **14 days** is a primary leading indicator of account stagnation and churn risk.
   </Accordion>
-  <Accordion title="Seat Engagement Ratio" icon="users">
+  <Accordion icon="users" title="Seat Engagement Ratio">
     The percentage of Monthly Active Users (MAUs) interacting with the dashboard editor or workspace admin settings relative to total provisioned seats. Low engagement indicates a failure to expand beyond the initial technical champion.
   </Accordion>
-  <Accordion title="Search & Analytics Health" icon="search">
+  <Accordion icon="search" title="Search & Analytics Health">
     Tracking total documentation search volume alongside the "No Results Found" rate. A sudden spike in failed searches indicates product updates have outpaced documentation content — a direct risk to end-user satisfaction.
   </Accordion>
 </AccordionGroup>
 
 ### C. Prioritizing Engineering & Product Roadmaps
-
 CS acts as a data-driven filter between enterprise customer feedback and the product team. We score feature requests using concrete business metrics:
 
 | Signal | How We Measure It | Why It Matters |
-|:---|:---|:---|
+| :--- | :--- | :--- |
 | **ARR at Risk / Unlocked** | Aggregate contract value of accounts citing a specific feature as a renewal or expansion blocker | Quantifies the business impact of shipping vs. not shipping |
 | **Impact × Reach Scoring** | % of enterprise tier that would benefit from a request | Prevents one-off builds for single vocal accounts |
 | **AI Deflection Optimization** | End-user query success rate via Mintlify Assistant | Documentation gaps driving tickets get fast-tracked for engineering |
@@ -65,13 +62,11 @@ CS acts as a data-driven filter between enterprise customer feedback and the pro
 
 Mintlify's three-pronged monetization model — platform base fees, seat licensing, and metered AI credit volume — presents clear, programmatic expansion paths.
 
-```
-[Land: Single Dev Team] ──> [Expand Seats: Cross-Functional Org] ──> [Scale Volume: AI Credits & Portals]
-```
+**The Growth Path:** Land: Single Dev Team ──> Expand Seats: Cross-Functional Org ──> Scale Volume: AI Credits & Portals
 
 | Expansion Lever | Core Value Proposition | CS Systematic Playbook |
-|:---|:---|:---|
-| **Cross-Functional Seat Scaling** | Migrating ownership from core engineering to Product, Support, Marketing, and Technical Writing teams | **The QBR Ticket-Reduction Play:** Present search analytics proving that high-quality external docs have reduced common support tickets by X%. Leverage this to introduce the VP of Support to fund additional editor seats for their technical writers. |
+| :--- | :--- | :--- |
+| **Cross-Functional Seat Scaling** | Migrating ownership from core engineering to Product, Support, Marketing, and Technical Writing teams | **The QBR Ticket-Reduction Play:** Present search analytics data proving that high-quality external docs have reduced common support tickets by X%. Leverage this to introduce the VP of Support to fund additional editor seats for their technical writers. |
 | **Metered AI Consumption** | Driving deeper usage of Mintlify Workflows, autonomous agents, and interactive Assistant credits | **The Automation Audit:** When an account reaches 80% of their bundled AI thresholds, trigger an automated audit showing exactly how many engineering hours Workflows saved during recent code merges. Pitch higher-tier AI volumes backed by clear ROI data. |
 | **Multi-Product / Brand Portals** | Moving an enterprise from a single documentation instance to isolated, dedicated portals for partner ecosystems or distinct product lines | **Org-Chart Account Mapping:** Identify sibling product divisions within holding companies. Use the initial engineering champion's successful deployment as a case study to expand Mintlify into adjacent business units. |
 
@@ -81,13 +76,13 @@ Mintlify's three-pronged monetization model — platform base fees, seat licensi
 
 Preventing churn upmarket requires driving adoption of features that carry incredibly high organizational switching costs.
 
-<CardGroup cols={2}>
-  <Card title="Custom MDX Components & Interactive Sandboxes" icon="code-2">
+<CardGroup cols="{2}">
+  <Card icon="code-2" title="Custom MDX Components & Interactive Sandboxes">
     **The Moat:** Once a customer's engineering team builds customized React/MDX playgrounds, tailored request/response sidebars, and interactive API consoles directly into their documentation layout, the engineering debt required to replicate that on a generic platform is prohibitively high.
 
-    **CS Prevention Strategy:** Proactively audit accounts using static markdown. If a customer is underutilizing interactive features, schedule a DX workshop to help them implement live code blocks and custom components — shifting them from static pages to a sticky application experience.
+    **CS Prevention Strategy:** Proactively audit accounts using static markdown. If a customer is underutilizing interactive features, schedule a DX workshop to help them implement live code blocks and custom components, shifting them from static pages to a sticky application experience.
   </Card>
-  <Card title="CI/CD Pipeline & GitHub Integrations" icon="git-merge">
+  <Card icon="git-merge" title="CI/CD Pipeline & GitHub Integrations">
     **The Moat:** When Mintlify is natively woven into a company's continuous deployment lifecycle — meaning a code push automatically reviews, lints, and builds matching documentation — it becomes core engineering infrastructure rather than an administrative afterthought.
 
     **CS Prevention Strategy:** Monitor repository webhook health via the Mintlify admin dashboard. If a customer's automated build success rate drops or a repository disconnects, trigger immediate CS outreach to resolve the pipeline error before it disrupts their workflow.
@@ -102,16 +97,16 @@ The classic enterprise conflict: a major account threatens to churn if a custom 
 
 <Steps>
   <Step title="Quantify and Translate into Business Impact">
-    CS must never pass raw feature requests directly to engineering. We translate the request into an objective business case — calculating the exact ARR at risk, expansion pipeline upside, and alignment with the current roadmap themes. A request without a dollar figure attached is just noise.
+    CS must never pass raw feature requests directly to engineering. We translate the request into an objective business case calculating the exact ARR at risk, expansion pipeline upside, and alignment with the current roadmap themes. A request without a dollar figure attached is just noise.
   </Step>
   <Step title="Deploy an Interim 'Frontend Bridge'">
     Because Mintlify natively supports custom scripts, styling, and flexible MDX layouts, we collaborate with a Solutions Engineer to build a functional workaround directly on the customer's documentation frontend. This resolves their immediate commercial pain point without requiring core backend engineering changes.
   </Step>
   <Step title="Establish a Shared Governance Matrix">
-    Introduce a transparent, criteria-based request evaluation framework to the client. This shifts the conversation from a high-tension negotiation to an objective partnership — committing to transparent timeline evaluations rather than empty delivery promises.
+    Introduce a transparent, criteria-based request evaluation framework to the client. This shifts the conversation from a high-tension negotiation to an objective partnership committing to transparent timeline evaluations rather than empty delivery promises.
   </Step>
 </Steps>
 
 <Note>
-  The goal of this system is not to say no — it's to say *not yet, and here's exactly why and what we're doing about it in the meantime.* That framing protects the engineering roadmap while preserving commercial trust.
+  The goal of this system is not to say no — it's to say *not yet, and here's exactly why and what we're doing about it in the meantime*. That framing protects the engineering roadmap while preserving commercial trust.
 </Note>
